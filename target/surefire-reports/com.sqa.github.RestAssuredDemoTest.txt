@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+Test set: com.sqa.github.RestAssuredDemoTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 12.524 s <<< FAILURE! - in com.sqa.github.RestAssuredDemoTest
+verifyIssuesNoUserAgent  Time elapsed: 0.715 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <400> but was <415>.
+
+	at com.sqa.github.RestAssuredDemoTest.verifyIssuesNoUserAgent(RestAssuredDemoTest.java:101)
+
+verifyPostIssuesUrlParam  Time elapsed: 2.053 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <201> but was <422>.
+
+	at com.sqa.github.RestAssuredDemoTest.verifyPostIssuesUrlParam(RestAssuredDemoTest.java:142)
+
+verifyPostPojo  Time elapsed: 1.196 s  <<< FAILURE!
+org.opentest4j.MultipleFailuresError: 
+Multiple Failures (1 failure)
+	org.opentest4j.AssertionFailedError: Object ==> expected: <com.sqa.model.github.Issue@1bc49bc5> but was: <com.sqa.model.github.Issue@7b6e5c12>
+	at com.sqa.github.RestAssuredDemoTest.verifyPostPojo(RestAssuredDemoTest.java:168)
+
